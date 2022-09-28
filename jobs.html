@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="jobs.css" />
+    <link rel="stylesheet" href="searchbar.css" />
+    <script
+      src="https://kit.fontawesome.com/629044acfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #nav {
+        display: flex;
+        width: 100%;
+        min-width: 1354px;
+        height: 60px;
+        justify-content: center;
+        background-color: white;
+      }
+      .left {
+        width: 15%;
+        text-align: left;
+        padding: 0%;
+        margin-bottom: 5px;
+        /* margin-left: 80px; */
+      }
+      .left img {
+        width: 200px;
+        height: 100px;
+      }
+      .right {
+
+        width: 80%;
+        padding-top: 5px;
+        text-align: center;
+        margin-right: 250px;
+      }
+      #logo {
+        height: 100%;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color:hotpink;  */
+        height: 100%;
+        width: 100%;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: rgb(82, 82, 82);
+        text-align: center;
+        padding: 8px -1px;
+        margin-right: 30px;
+        text-decoration: none;
+        width: 84%;
+        /* border: 1px solid forestgreen;  */
+      }
+
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #f1f1f1;
+      }
+
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 11;
+        height: auto;
+        margin-top: -3px;
+        align-items: center;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: rgb(82, 82, 82);
+      }
+      .dropbtn {
+        margin-top: -1px;
+        height: 38px;
+        padding-top: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropbtn:hover {
+        background-color: #f1f1f1;
+        text-decoration: underline 4px solid rgb(62, 62, 255);
+        color: rgb(62, 62, 255);
+      }
+      .dropbtn .badge {
+        position: absolute;
+        padding: 1px 2px;
+        border-radius: 50%;
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div class="d-flex">
+        <div class="left">
+          <img
+            id="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe7IKd6HmXmjs2l0I-mFu8Vps2wALT6IHQaQ&usqp=CAU"
+            alt=""
+            onclick="window.location.href='homepagesNaukri.html'"
+          />
+        </div>
+        <div class="right">
+          <ul>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">JOBS</a>
+              <div class="dropdown-content">
+                <a href="#">Job by Location</a>
+                <a href="#">Job by Skill</a>
+                <a href="#">Job by Designation</a>
+                <a href="#">Job by Company</a>
+                <a href="#">Job by Category</a>
+                <a href="#">Browse All Jobs</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">RECRUITERS</a>
+              <div class="dropdown-content">
+                <a href="#">Browse all Recruiters</a>
+                <a href="#">Connection Recruiters</a>
+                <a href="#">Go to Naukri Recruiter</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">COMPANIES</a>
+              <div class="dropdown-content">
+                <a href="#">Browse All Companies</a>
+                <a href="#">About Companies</a>
+                <a href="#">Interview Questions</a>
+                <a href="#">Write Company Review</a>
+                <a href="#">Write Interview Advice</a>
+                <a href="#">Company Review</a>
+                <a href="#">Company Salaries</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">TOOLS</a>
+              <div class="dropdown-content">
+                <a href="#">Carier Dashboard</a>
+                <a href="#">Your Next Career Move</a>
+                <a href="#">Skill Trend</a>
+                <a href="#">Naukri Lab</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">SERVICES</a>
+              <div class="dropdown-content">
+                <a href="#">Design</a>
+                <a href="#">Web</a>
+                <a href="#">Mobile</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">MORE</a>
+              <div class="dropdown-content">
+                <a href="#">Our Company</a>
+                <a href="#">Team</a>
+                <a href="#">Support</a>
+              </div>
+            </li>
+            <li><a class="dropbtn" href="#">LOGIN </a></li>
+            <li style="margin-left: 109px">
+              <a class="dropbtn" href="#"
+                ><i class="far fa-bell fa-2x"></i
+                ><span class="badge">3</span></a
+              >
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">For Employers</a>
+              <div class="dropdown-content">
+                <a href="#">Buy Online</a>
+                <a href="#">Employe Login</a>
+                <a href="#">Support</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="searchFilterHeader" class="w-100">
+      <div class="d-flex">
+        <img
+          src="https://static.naukri.com/s/7/109/assets/images/qsb.e037c49a.png"
+          alt=""
+        />
+        <p class="bold-font">
+          Showing jobs for <span id="filterKey"> #filter</span>
+          <span id="show-searchbar" class="blue"
+            >Modify <i class="fas fa-pencil-alt"></i
+          ></span>
+        </p>
+      </div>
+      <button id="save_as_alert_btn">Save as Alert</button>
+    </div>
+    <div id="searchbar-container">
+      <div id="searchbar" class="d-flex jc-sb">
+        <div class="d-flex">
+          <img
+            src="https://static.naukri.com/s/7/109/assets/images/qsb.e037c49a.png"
+            alt=""
+          />
+          <p class="bold-font">Showing jobs for</p>
+          <div id="sb-input-group">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Skills,Designation, Companies"
+            />
+            <input
+              type="text"
+              name=""
+              id="search-location-input"
+              placeholder="Location/Locality"
+            />
+            <button id="modify-search-btn">Modify Search</button>
+          </div>
+        </div>
+
+        <div>
+          <button id="close-searchbar"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="filterContainer">
+        <div>
+          <div id="form-header" class="d-flex jc-sb">
+            <p class="bold-font">
+              <img src="icons/filter_list.png" alt="" id="filter-icon" /> All
+              Filters
+            </p>
+            <!-- <p id="applied">Applied</p> -->
+          </div>
+
+          <form action="">
+            <div class="form-group d-flex jc-sb">
+              <label for="freshness" class="bold-font">Freshness</label>
+              <select name="freshness" id="freshness">
+                <option value="-1">Select</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p class="bold-font">Work from Home</p>
+              <input type="checkbox" name="wfh" id="wfh" />
+              <label for="wfh"> WFH during Covid </label>
+            </div>
+
+            <!-- salary filters -->
+            <div class="form-group" id="salaryFilterContainer">
+              <div class="d-flex jc-sb">
+                <p class="bold-font">Salary</p>
+                <!-- <i class="fas fa-chevron-down"></i> -->
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  name="salary"
+                  id="sal1"
+                  value='{"min":"0" ,"max":"3"}'
+                />
+                <label for="sal1">0-3 Lakhs</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="salary"
+                  id="sal2"
+                  value='{"min": "3","max":"6"}'
+                />
+                <label for="sal2">3-6 Lakhs</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="salary"
+                  id="sal3"
+                  value='{"min":"6" ,"max":"10"}'
+                />
+                <label for="sal3">6-10 Lakhs</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="salary"
+                  id="sal4"
+                  value='{"min":"10" ,"max":"15"}'
+                />
+                <label for="sal4">10-15 Lakhs</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <p class="bold-font">Location</p>
+              <div class="d-flex col" id="locationsFilter">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="location"
+                    id="Remote"
+                    value="Remote"
+                  />
+                  <label for="Remote">Remote</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="location"
+                    id="Bangalore"
+                    value="Bangalore/Bengaluru"
+                  />
+                  <label for="Bangalore">Bangalore</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="location"
+                    id="Delhi"
+                    value="Delhi"
+                  />
+                  <label for="Delhi">Delhi</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="location"
+                    id="Hyderabad"
+                    value="Hyderabad"
+                  />
+                  <label for="Hyderabad">Hyderabad</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="location"
+                    id="Chennai"
+                    value="Chennai"
+                  />
+                  <label for="Chennai">Chennai</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="location"
+                    id="Mumbai"
+                    value="Mumbai"
+                  />
+                  <label for="Mumbai">Mumbai</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-flex jc-sb">
+                <p class="bold-font">Education</p>
+                <!-- <i class="fas fa-chevron-down"></i> -->
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="education"
+                  id="Any Graduate"
+                  value="Any Graduate"
+                />
+                <label for="Any Graduate">Any Graduate</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="education"
+                  id="Any Postgraduate"
+                  value="Any Postgraduate"
+                />
+                <label for="Any Postgraduate">Any Postgraduate</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="education"
+                  id="BTech/B.E."
+                  value="B.Tech/B.E."
+                />
+                <label for="BTech/B.E.">B.Tech/B.E.</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="education"
+                  id="M.Tech"
+                  value="M.Tech"
+                />
+                <label for="M.Tech">M.Tech</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-flex jc-sb">
+                <p class="bold-font">Experience</p>
+                <!-- <i class="fas fa-chevron-down"></i> -->
+              </div>
+              <div>
+                <p id="exp-value">Any</p>
+                <input
+                  type="range"
+                  min="0"
+                  max="31"
+                  value="31"
+                  class="slider"
+                  id="experience"
+                  name="exp"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div>
+        <!-- <div id="statistics">placeholder</div> -->
+        <div id="jobCardsContainer"></div>
+      </div>
+      <div id="featured">
+        <div id="recmd-reg">
+          <div class="d-flex">
+            <h4>Get Personalised Job Recommendations</h4>
+            <img
+              src="https://static.naukri.com/s/7/109/assets/images/register.e0bc10df.png"
+              alt=""
+              height="60px"
+            />
+          </div>
+          <p>
+            Registreing gives you the benefit to browse & apply variety of jobs
+            based on your preferences
+          </p>
+          <button>Registrer Now</button>
+        </div>
+        <div id="featured-comp">
+          <h4>See 232 jobs in Featured Companies</h4>
+          <div id="company-container"></div>
+        </div>
+      </div>
+    </div>
+    <div id="activeCBs-container"></div>
+
+    <div id="footer">
+      <div id="box4">
+        <div class="col">
+          <h4 class="bottomboxh4">Information</h4>
+          <h5 class="bottomh5">About Us</h5>
+          <h5 class="bottomh5">Terms & Conditions</h5>
+          <h5 class="bottomh5">Privacy Policy</h5>
+          <h5 class="bottomh5">Careers with Us</h5>
+          <h5 class="bottomh5">Sitemap</h5>
+          <h5 class="bottomh5">Contact Us</h5>
+          <h5 class="bottomh5">FAQs</h5>
+          <h5 class="bottomh5">Summons / Notices</h5>
+          <h5 class="bottomh5">Grievances</h5>
+          <h5 class="bottomh5">Fraud Alert</h5>
+          <h5 class="bottomh5">Trust and Safety</h5>
+
+          <h4 class="bottomboxh4">Naukri On Mobile</h4>
+          <div id="app-stores">
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dxxHtZYli9yOzHSioD9bq_IrXjgyhA8m8KgG0fWx4At1SeGOQCsS8DIut89BpK-iUPo&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTUSY4JSJ_K9sX0qF9pQoSU6rc7dc3KGtrgl4kqQFAWkvxm4usDu_TZAH-evqZcPaSr0&usqp=CAU"
+                alt=""
+              />
+            </div>
+            `
+          </div>
+        </div>
+
+        <div class="col">
+          <h4 class="bottomboxh4">Jobseekers</h4>
+          <h5 class="bottomh5">Register Now</h5>
+          <h5 class="bottomh5">Search Jobs</h5>
+          <h5 class="bottomh5">Login</h5>
+          <h5 class="bottomh5">Create Job Alerts</h5>
+          <h5 class="bottomh5">Report a Problem</h5>
+          <h5 class="bottomh5">Naukri Blogs</h5>
+          <h5 class="bottomh5">Mobile Site</h5>
+
+          <h4 class="bottomboxh4">Browse a Jobs</h4>
+          <h5 class="bottomh5">Browse All jobs</h5>
+          <h5 class="bottomh5">Premium MBA Jobs</h5>
+          <h5 class="bottomh5">Premium Engineering Jobs</h5>
+          <h5 class="bottomh5">Govt Jobs</h5>
+          <h5 class="bottomh5">International Jobs</h5>
+          <h5 class="bottomh5">Jobs in Golf</h5>
+          <h5 class="bottomh5">Jobs by Company</h5>
+          <h5 class="bottomh5">Jobs by Category</h5>
+          <h5 class="bottomh5">jobs by Desigination</h5>
+          <h5 class="bottomh5">Jobs by Location</h5>
+          <h5 class="bottomh5">Jobs by Skill</h5>
+        </div>
+        <div class="col">
+          <h4 class="bottomboxh4">Jobseekers Services</h4>
+          <h5 class="bottomh5">Priority Applicant</h5>
+          <h5 class="bottomh5">Resume Display</h5>
+          <h5 class="bottomh5">Resume Writing</h5>
+          <h5 class="bottomh5">Jobs4U</h5>
+          <h5 class="bottomh5">Recruiter Connection</h5>
+          <h5 class="bottomh5">Job Search Booster</h5>
+
+          <h4 class="bottomboxh4">Naukri Learning</h4>
+          <h5 class="bottomh5">Software and Technology</h5>
+          <h5 class="bottomh5">AI and Data science</h5>
+          <h5 class="bottomh5">Management</h5>
+          <h5 class="bottomh5">Finance</h5>
+          <h5 class="bottomh5">Creativity and Design</h5>
+          <h5 class="bottomh5">Emaerging Technologies</h5>
+          <h5 class="bottomh5">Emerging-non CS</h5>
+          <h5 class="bottomh5">Healthcare</h5>
+          <h5 class="bottomh5">Energy and Enviroment</h5>
+          <h5 class="bottomh5">Social Sciences</h5>
+          <h5 class="bottomh5">Personal Growth</h5>
+        </div>
+        <div class="col">
+          <h4 class="bottomboxh4">Employers</h4>
+          <h5 class="bottomh5">Job Posting</h5>
+          <h5 class="bottomh5">Resume Database Access</h5>
+          <h5 class="bottomh5">Rcruiter Login</h5>
+          <h5 class="bottomh5">Naukri RMS</h5>
+          <h5 class="bottomh5">Buy Resume Packages Online</h5>
+          <h5 class="bottomh5">Transition Services</h5>
+          <h5 class="bottomh5">Report a Problem</h5>
+          <h5 class="bottomh5">Recruiter from USA, call</h5>
+          <h5 class="bottomh5">Toll Free # 1866-557-3340</h5>
+
+          <h4 class="bottomboxh4">Ambition Box</h4>
+          <h5 class="bottomh5">Interview Questions</h5>
+          <h5 class="bottomh5">About Companies</h5>
+          <h5 class="bottomh5">Share Interview Advice</h5>
+          <h5 class="bottomh5">Write Company Review</h5>
+          <h5 class="bottomh5">Company reviews</h5>
+          <h5 class="bottomh5">Company Salries</h5>
+          <br />
+
+          <p class="bottomp">Follow us</p>
+          <div class="followus">
+            <span id="fb-icon" class="social"> </span>
+
+            <span id="twitter-icon" class="social"> </span>
+            <span id="linkedin-icon" class="social"> </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="marquee-container">
+        <p>Partner Sites</p>
+        <marquee bahavior="scroll" direction="left" scrollamount="30">
+          <img
+            src="https://i.ibb.co/HYsvyyb/IMG-20220122-005906.jpg"
+            width="250"
+            height="80px"
+          />
+
+          <img
+            src="https://i.ibb.co/tBQYNgM/IMG-20220122-005849.jpg"
+            width="250"
+            height="80px"
+          />
+        </marquee>
+      </div>
+
+      <div id="copyrights">
+        <p>All rights reserved @ 2022 Info Edge (India) Ltd.</p>
+      </div>
+    </div>
+  </body>
+  <script src="jobData.js"></script>
+  <script src="jobs.js"></script>
+  <script src="filters.js"></script>
+  <script src="processFilters.js"></script>
+</html>
