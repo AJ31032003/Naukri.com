@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <style>
+      #navbar {
+        /* overflow: hidden; */
+        /* position: fixed; */
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        padding-top: 6px;
+
+        background-color: white;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        justify-content: space-evenly;
+        margin-bottom: 120px;
+      }
+      #navitem {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .navp {
+        margin-right: 30px;
+        color: rgb(86, 86, 92);
+        margin-top: 12px;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <div>
+          <img
+            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+            alt=""
+            onclick="window.location.href='signup.html'"
+            id="navimg"
+          />
+        </div>
+        <div id="navitem">
+          <p class="navp" onclick="window.location.href='home.html'">jobs</p>
+
+          <p class="navp" onclick="window.location.href='home.html'">
+            Recruiters
+          </p>
+          <p class="navp" onclick="window.location.href='home.html'">
+            Companies
+          </p>
+          <p class="navp" onclick="window.location.href='home.html'">Tools</p>
+          <p class="navp" onclick="window.location.href='home.html'">
+            Services
+          </p>
+          <p class="navp" onclick="window.location.href='home.html'">More</p>
+          <p class="navp" onclick="window.location.href='login.html'">Login</p>
+          <p class="navp" onclick="window.location.href='home.html'">
+            For Employers
+          </p>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
