@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <title>Jobs - Recruitment - Job Search -  Employment - Job Vacancies - Naukri.com</title>
+    <head>
+<style>
+    #upper{
+    background-color: rgb(249,250,254);
+    }
+    #container{
+        width:85%;
+        height:70px;
+        margin:auto;
+        display:flex;
+      }
+      .logo{
+        width:15%;
+         height:30px;
+        margin-top:20px;
+        cursor:pointer;
+      }
+      .option{
+        width:35%;
+        height:70px;
+        display:flex;
+        justify-content:space-around;
+        margin-left:50px;
+      }
+      .login{
+       width:30%;
+        height:70px; 
+        margin-left:200px;
+        display:flex;
+        cursor:pointer;
+        justify-content:space-between;   
+      }
+      .btn{
+        background-color:white;
+        border:0px;
+        color:grey;
+        cursor:pointer;
+      }
+      .btn1{
+        background-color: rgb(249,250,254);
+        border:0px;
+        color:black;
+        cursor:pointer;
+      }
+    .login-btn1{
+        margin-top:15px;
+        width:80px;
+        height:40px;
+        font-size:20px;
+        border:1px solid rgb(77,131,255);
+        color:rgb(77,131,255);
+        border-radius:30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:white;
+        cursor:pointer;
+        }
+    .login-btn2{
+        margin-top:15px;
+        height: 41px;
+            border:0px;
+        width:120px;
+        cursor:pointer;
+        padding:7px;
+        color:white;
+        font-size:20px;
+        border-radius:30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:rgb(255,117,85);
+    }
+    .btn{
+        border:0px;
+        background-color:rgb(249,250,254); 
+        margin-left:-50px;  
+    }
+    #second{
+        width:100%;
+        height:200px;
+        border:1px solid rgb(249,250,254);;
+        background-color:rgb(249,250,254);
+        text-align:center;
+    }
+
+    .p1{
+    font-size:40px;
+    font-weight:bold;
+    font-style:Roboto;
+    font-family: serif;
+    }
+    .p2{
+        font-size:25px;
+        color:grey;
+        font-family: sans-serif;
+        margin-top:-30px;
+        }
+        .search{
+            width:200px;
+            height:80px;
+            margin:auto;
+        
+        }
+        .searchbox{
+        width:1050px;
+        height:60px;
+        margin:auto;
+        display:flex;
+        padding-bottom:20px;
+        cursor:pointer;
+
+        margin-top:-35px;
+        border-radius:50px;
+        background-color:white;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+        }
+        .innersearchbox1{
+        margin-top:20px;
+        
+        }
+        .innersearchbox2{
+        margin-top:30px;
+        margin-left:20px;
+        
+    }
+        
+        .searchIcon{
+        width:20px;
+        margin-top:10px;
+        margin-left:20px;
+        }
+        
+    .btnsearch{
+        width:120px;
+        height:50px;
+        font-size:20px;
+        font-weight:bold;
+        color:white;
+        cursor:pointer;
+
+        background-color:rgb(69,126,255);
+        margin-top:-200px;
+        margin-bottom:300px;
+        margin-left:20px;
+        border-radius:50px;
+        border:0px;
+    }
+    .input1{
+    width:350px;
+    color:grey;
+    font-size:15px;
+    border:0px;
+
+    }
+    .input2{
+    margin-left:30px;
+    width:200px;
+    color:grey;
+    font-size:15px;
+    border:0px;
+    }
+    #getmain{
+    width: 900px;
+    height: 160px;
+    margin: auto;
+    border: 1px solid gray;
+    margin-top:50px;
+}
+    #getfirst, #getsecond, #getthird{
+        display: flex;
+        padding: 12px;
+        font-size: 18px;
+        color: rgb(77, 75, 75);
+        cursor: pointer;
+    }
+    .getfas{
+        margin-left: 15px;
+    }
+    .gethidden, .getfas{
+        color: white;
+    }
+    #getline1, #getline2, #getline3{
+        display: none;
+        width: 0px;
+        height: 30px;
+        background-color:rgb(245, 140, 103);
+        margin-left: -12px;
+        border: 2px solid rgb(245, 140, 103);
+    }
+    #getleft{
+        width: 30%;
+    }
+    #getmiddle{
+        width: 20%;
+        padding: 2px;
+    }
+    .getimg{
+        width:55px;
+        margin: 5px;
+    }
+    .getimage{
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #getmain{
+        display: flex;
+    }
+    #getright{
+        padding: 5px;
+    }
+    #gethead{
+        margin-top: 8px;
+        margin-left:15px;
+
+    }
+    #getpara{
+        margin-top: -15px;
+        color: gray;
+        margin-bottom: 15px;
+        margin-left:15px;
+
+    }
+    #getbtn{
+        padding: 10px;
+        width: 80%;
+        margin-left: 60px;
+        font-size: 18px;
+        margin-left:15px;
+        background-color: rgb(255,117,85);
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    .getbutton{
+        border: 0px;
+        padding: 4px;
+        font-size: 15px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .p3{
+        font-size:30px;
+        font-weight:bold;
+        font-family: sans-serif;
+
+        text-align:center;
+        margin-top:45px;
+    }
+    .carousel-wrapper {
+        width: 1000px;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        font-family: sans-serif;
+        }
+              
+    .owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+    }
+    
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+    background: #5110e9;
+    }
+    
+    
+    .owl-carousel .item {
+    text-align: center;
+    }
+    
+    .owl-carousel .nav-button {
+    height: 35px;
+    width: 35px;
+    border:2px solid grey;
+    
+    
+    cursor: pointer;
+    
+    position: absolute;
+    top: 50px !important;
+    
+    }
+    
+    .owl-carousel .owl-prev.disabled,
+    .owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+    }
+    
+    .owl-carousel .owl-prev {
+    left: -15px;
+    
+    
+    }
+    
+    .owl-carousel .owl-next {
+    right: -35px;
+    }
+    
+    .owl-theme .owl-nav [class*=owl-] {
+    color: #ffffff;
+    font-size: 39px;
+    background: #000000;
+    border-radius: 30px;
+    }
+    
+    .owl-carousel .prev-carousel:hover {
+    background-position: 0px -53px;
+    }
+    
+    .owl-carousel .next-carousel:hover {
+    background-position: -24px -53px;
+    }
+    .getnewbox{
+    width:190px;
+    height:150px;
+    margin:10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+              
+
+        </style>
+         
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <div id="upper">
+   <div id="container">
+  <div class="logo" onclick="window.location.href='homepagesNaukri.html'">
+     
+       <img src="	https://static.naukimg.com/s/4/100/i/naukri_Logo.png" width="186px" height="31px"/> 
+          
+  </div>
+  <div class="option">
+     <button class="btn" onclick="window.location.href='browse-jobs.html'" ><h3>Jobs</h3></button>
+            <button class="btn" onclick="window.location.href='browse-jobs.html'" ><h3>Companies</h3></button>
+            <button class="btn" onclick="window.location.href='browse-jobs.html'" ><h3>Services</h3></button>
+            <button class="btn" onclick="window.location.href='browse-jobs.html'" ><h3>Resources</h3></button>
+  </div>
+  <div class="login">
+    <div>
+    </div>
+            <button class="login-btn1" type="button" onclick="window.location.href='login.html'">Login</button>
+            <button class="login-btn2" type="button" onclick="window.location.href='signup.html'" >Register</button></a>
+    <div>
+    </div>
+                <button class="btn1" type="button"><h3>For Employers <i class="fas fa-chevron-down"></i></h3></button>
+
+    </div>
+  </div>
+</div>
+   <div id="second">
+        
+              <p class="p1" >Find your dream job now</p>
+              <p class="p2">5 lakh+ jobs for you to explore</p>
+            </div>
+            <div class="searchbox">
+           <div class="innersearchbox1">
+           <img src="https://static.naukimg.com/s/7/103/i/search.56f1923b.svg" class="searchIcon"/>
+           </div>
+           <div class="innersearchbox2">
+           <form>
+          <input placeholder="Enter skills / designations / companies" class="input1" />
+
+          <input placeholder="Enter Location" class="input2"/>
+          <select class="input2">
+            <option>Select Experience</option>
+            <option>Fresher(less than one year)</option>
+            <option>1 year</option>
+            <option>2 year</option>
+            <option>3 year</option>
+            <option>4 year</option>
+            <option>5 year</option>
+            <option>6 year</option>
+
+
+          </select>
+          <button type="button"onclick="window.location.href='jobs.html'" class="btnsearch">Search</button>
+           </form>
+          </div>
+      </div>
+      
+<!...................................................................................................................>
+      <div id="getmain">
+        <div id="getleft">
+            <div id="getfirst">
+                <div id="getline1"></div>
+                <div class="gethidden">abc</div>
+                <div><button onclick="changeContent1()" class="getbutton">1. Get Discovered</button></div>
+            </div>
+            <div id="getsecond">
+                <div id="getline2"></div>
+                <div class="gethidden">abc</div>
+                <div><button onclick="changeContent2()" class="getbutton">2. Get Connected</button></div>
+            </div>
+            <div id="getthird">
+                <div id="getline3"></div>
+                <div class="gethidden">abc</div>
+                <div><button onclick="changeContent3()" class="getbutton">3. Get Hired</button></div>
+            </div>
+        </div>
+        <div id="getmiddle">
+            <div class="getimage">
+                <img src="https://img.naukimg.com/logo_images/groups/v1/240812.gif" class="getimg" alt="">
+                <img src="https://img.naukimg.com/logo_images/groups/v1/1320206.gif" class="getimg"  alt="">
+            </div>
+            <div class="getimage">
+                <img src="https://img.naukimg.com/logo_images/groups/v1/67548.gif" class="getimg"  alt="">
+                <img src="https://img.naukimg.com/logo_images/groups/v1/243080.gif" class="getimg" alt="">
+            </div>
+        </div>
+        <div id="getright">
+            <div>
+                <h4 id="gethead">Become searchable by top companies in your domain</h4>
+                <p id="getpara">Companies search for candidate CVs directly for open positions</p>
+            </div>
+            <a href="signup.html" id="getbtn">Register to get Discovered</a>
+        </div>
+    </div>
+    <!....................................................................................................................>
+    <div class="p3">
+        <p style="font-size:30px;">
+          Trending on Naukri today
+        </p>
+        </div>
+
+        <div class="big">
+            <div class="carousel-wrapper">
+                <div class="owl-carousel owl-theme">
+                   
+                    <div class="item"><div class="getnewbox" onclick="window.location.href='jobs-remote.html'">
+                       <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/remote.svg" width="50px" height="50px" /> 
+                       </div>
+                     <h4 style="margin-top:-3px">Remote <i class="fas fa-chevron-right" style="color:grey" ></i></h4>
+                     <p style="color:grey;font-size:15px;margin-top:-10px">4.8K+Jobs</p>
+
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/mnc.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">MNC <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">3.3K+Jobs</p>
+     
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/software.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Software & IT<i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">202.5K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/marketing.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Marketing <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">17.5K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/sales.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Sales <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">57.8K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/engineering.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Engineering <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">15K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/data-science.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Data Science <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">9.K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/finance.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">BFSI<i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">20.5K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/hr.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">HR <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">18.8K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/analytics.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Analytics<i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">8.6K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/project-management.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Project Mgmt <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">9.5k+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/temporary-wfh.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Temp WFH <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">19.6K+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/supplychain.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Supply Chain <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">5.8k+Jobs</p>
+ 
+                    </div></div>
+                    <div class="item" onclick="window.location.href='jobs.html'"><div class="getnewbox">
+                        <div class="traindinglogo"><img src="https://static.naukimg.com/s/0/0/i/trending-naukri/freshers.svg" width="50px" height="50px" /> 
+                        </div>
+                      <h4 style="margin-top:-3px">Fresher <i class="fas fa-chevron-right" style="color:grey"></i></h4>
+                      <p style="color:grey;font-size:15px;margin-top:-10px">48.3K+Jobs</p>
+ 
+                    </div></div>
+              </div>
+            </div>
+        
