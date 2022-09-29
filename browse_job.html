@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="browse_job.css">
+    <title>Jobs by Company, Location, Skills, Designation & Industry - Naukri.com </title>
+
+    <script
+      src="https://kit.fontawesome.com/d5d0d8bb45.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     
+   
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <div id="navbar1">
+        <div class="left1">
+          <img
+            id="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe7IKd6HmXmjs2l0I-mFu8Vps2wALT6IHQaQ&usqp=CAU"
+            alt=""
+            onclick="window.location.href='homepagesNaukri.html'"
+          />
+        </div>
+        <div class="right1">
+          <ul>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">JOBS</a>
+              <div class="dropdown-content1">
+                <a href="#">Job by Location</a>
+                <a href="#">Job by Skill</a>
+                <a href="#">Job by Designation</a>
+                <a href="#">Job by Company</a>
+                <a href="#">Job by Category</a>
+                <a href="#">Browse All Jobs</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">RECRUITERS</a>
+              <div class="dropdown-content1">
+                <a href="#">Browse all Recruiters</a>
+                <a href="#">Connection Recruiters</a>
+                <a href="#">Go to Naukri Recruiter</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">COMPANIES</a>
+              <div class="dropdown-content1">
+                <a href="#">Browse All Companies</a>
+                <a href="#">About Companies</a>
+                <a href="#">Interview Questions</a>
+                <a href="#">Write Company Review</a>
+                <a href="#">Write Interview Advice</a>
+                <a href="#">Company Review</a>
+                <a href="#">Company Salaries</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">TOOLS</a>
+              <div class="dropdown-content1">
+                <a href="#">Carier Dashboard</a>
+                <a href="#">Your Next Career Move</a>
+                <a href="#">Skill Trend</a>
+                <a href="#">Naukri Lab</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">SERVICES</a>
+              <div class="dropdown-content1">
+                <a href="#">Design</a>
+                <a href="#">Web</a>
+                <a href="#">Mobile</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">MORE</a>
+              <div class="dropdown-content1">
+                <a href="#">Our Company</a>
+                <a href="#">Team</a>
+                <a href="#">Support</a>
+              </div>
+            </li>
+            <li><a class="dropbtn1" href="#">LOGIN </a></li>
+            
+            <li>
+              <a href=""
+                ><i
+                  style="
+                    width: 30px;
+                    padding: 0px -5px 0px -5px;
+                    margin: 5px 0px;
+                    color: rgb(82, 82, 82);
+                  "
+                  class="far fa-bell fa-2x"
+                  ><span class="badge">3</span></i
+                ></a
+              >
+            </li>
+
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">For Employers</a>
+              <div class="dropdown-content1">
+                <a href="#">Buy Online</a>
+                <a href="#">Employe Login</a>
+                <a href="#">Support</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="inner1">
+          <p onclick="window.location.href='homepagesNaukri.html'">All Jobs</p>
+          <p onclick="window.location.href='homepagesNaukri.html'">
+            IIT/IIM Jobs
+          </p>
+          <p onclick="window.location.href='homepagesNaukri.html'">Govt Jobs</p>
+          <p onclick="window.location.href='homepagesNaukri.html'">
+            International Jobs
+          </p>
+          <p onclick="window.location.href='homepagesNaukri.html'">
+            Wlak-In jobs
+          </p>
+        </div>
+        <div id="sbox">
+          <div class="sbx">
+            <form class="searchbox" action="">
+              <input
+                type="text"
+                class="leftbar"
+                placeholder=" Skills, Designation, Company"
+                id="SDCInput"
+              />
+              <input
+                type="text"
+                class="rightbar"
+                placeholder=" Locations/Locality"
+                id="locationInput"
+              />
+              <button class="searchbar" id="search-btn">Search</button>
+            </form>
+            <h6 class="adv">Advanced Search</h6>
+            <h6 class="browse">Browse Jobs</h6>
+            <div id="ibox">
+              <div>All Jobs</div>
+              <div>Jobs Company</div>
+              <div>Jobs by Category</div>
+              <div>Jobs by Location</div>
+              <div>Jobs by Designation</div>
+              <div>Jobs by Skill</div>
+            </div>
+          </div>
+          <div id="reg">
+            <button onclick='window.location.href="signup.html"'>
+              Register With Us
+            </button>
+            <h5>-or-</h5>
+            <h3>Upload Your CV</h3>
+            <h6>Max 2MB, doc, docx, rtf, pdf</h6>
+            <h5>We Will Create Your Profile</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="box2">
+        <h3>Browse Jobs by Locations</h3>
+        <div id="innerbox2">
+          <div onclick='setLocationFilter("Mumbai")''>
+          <img src="https://i.ibb.co/VWR7bT7/mumbai-png.png" alt="" />
+          <h5>Jobs in Mumbai</h5>
+        </div>
+
+        <div onclick='setLocationFilter("Delhi")'>
+          <img src="https://i.ibb.co/4KYsnjL/delhi-png.png" alt="" />
+          <div>
+            <h5>Jobs in Delhi</h5>
+          </div>
+        </div>
+        <div onclick='setLocationFilter("Bangalore/Bengaluru")'>
+          <img src="https://i.ibb.co/R4BXyhh/bang-png.png" alt="" />
+          <h5>Jobs in Bangolore</h5>
+          <div></div>
+        </div>
+        <div onclick="setLocationFilter('Hyderabad')">
+          <img src="https://i.ibb.co/bscyw3m/hyd-png.png" alt="" />
+          <h5>Jobs in Hyderabad</h5>
+        </div>
+        <div onclick="setLocationFilter('Chennai')">
+          <img src="https://i.ibb.co/5hq9mCv/chennai-png.png" alt="" />
+          <h5 onclick="window.location.href='jobs.html'">Jobs in Chernnai</h5>
+        </div>
+      </div>
+      <a
+        onclick="window.location.href='jobs.html'"
+        id="a1"
+        href=""
+        style="text-decoration: none"
+        >View All Locations</a
+      >
+    </div>
+    </body>
+</html>
