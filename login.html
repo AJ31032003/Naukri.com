@@ -32,6 +32,40 @@
         text-transform: uppercase;
         font-size: 12px;
       }
+
+      /* day-2 */
+
+      #container {
+        margin-top: 0px;
+        display: flex;
+        height: 100vh;
+        width: 80%;
+        margin: auto;
+        /* border: 1px solid teal; */
+        /* background-color: #e2e7f7; */
+        background-color: white;
+      }
+      #box1 {
+        /* display: flex; */
+        /* margin-top: 30px; */
+        width: 55%;
+        height: 500px;
+        margin-bottom: -40px;
+        /* border: 1px solid red; */
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      #img {
+        width: 250px;
+        /* margin-right:-2px; */
+        margin-top: 8%;
+        margin-bottom: 0px;
+        margin-left: 270px;
+      }
+
+      /* day-3 */
     </style>
   </head>
   <body>
@@ -66,7 +100,41 @@
         </div>
       </div>
     </header>
+
+    <!-- day-2 -->
+
+    <div id="container">
+      <div id="box1">
+        <h3 id="h1">New to Naukri?</h3>
+        <div class="div12">
+          <i class="fas fa-check" id="checkb"></i>
+          <p class="paracheck">One click apply using naukri profile.</p>
+        </div>
+        <div class="div12">
+          <i class="fas fa-check" id="checkb"></i>
+          <p class="paracheck">Get relevant job recommendations.</p>
+        </div>
+        <div class="div12">
+          <i class="fas fa-check" id="checkb"></i>
+          <p class="paracheck">
+            Showcase profile to top companies and consultants.
+          </p>
+        </div>
+        <div class="div12">
+          <i class="fas fa-check" id="checkb"></i>
+          <p class="paracheck">Know application status on applied jobs.</p>
+        </div>
+        <div id="btn" onclick="window.location.href='signup.html'">
+          Register for Free
+        </div>
+        <img
+          id="img"
+          src="https://static.naukri.com/s/5/105/i/register.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- day-3 -->
   </body>
 </html>
-
-
