@@ -5,6 +5,353 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #container{
+           
+            width: 100%;
+            height: 100%;
+            background-color: #fafbfe;
+            margin:auto;
+            display: flex;
+            grid-template-columns: repeat(2);
+        }
+        
+        #box1{
+        background-color: #ffffff;
+           /* position:sticky; 
+           overflow: visible; */
+        width: 24%;
+        min-width: 310px;
+        height: 280px;
+        margin-top: 200px;
+        border-radius: 12px;
+        border: 1px dashed rgb(113, 151, 151);
+        margin-left: 2%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+    #box2{
+        /* position:absolute; */
+        width: 70%;
+        height: 1000px;
+        margin-left: 3%;
+        margin-right: 2%;
+        /* border: 2px solid teal; */
+        margin-top: 7%;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        border-radius: 12px;
+        display: flex;
+    }
+    
+    .input {
+        width: 100%;
+        margin: auto;
+        height: 40px;
+        display: block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        margin-left: 74px;
+        border: 0;
+        border: 1.5px solid rgb(222, 225, 235);
+    }
+    input[type=text] 
+    {    font-size: 20px;
+         /* width: 100%; */
+
+       
+    }
+   
+    input[type=email] 
+    {    font-size: 20px;
+         /* width: 100%; */
+       
+    }
+    input[type=password] 
+    {    font-size: 20px;
+         /* width: 100%; */
+       
+    }
+    input[type=tel] 
+    {    font-size: 20px;
+         /* width: 100%; */
+       
+    }
+    input[type=checkbox] 
+    {    width: 18px;
+        /* display: block; */
+        margin-left:75px ;
+        align-items: left;
+        margin-top: 4px;
+       
+    }
+
+    .content{
+        /* text-align: left; */
+        display: block;
+        width: 80%;
+        margin-left: 78px;
+        /* margin: auto; */
+        margin-top: 40px;
+        margin-bottom: 5px;
+        font-family: sans-serif;
+        /* color: rgb(68, 124, 124); */
+        color: rgb(86, 86, 92);
+        /* font-weight: bold; */
+        font-size: 16px;
+    }
+    #para{
+        text-align: right;
+    }
+    .div2{
+        display: flex;
+        height: 40px;
+        /* border: 2px solid red; */
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #wp{
+        color: green;
+        /* background-color: greenyellow; */
+        font-size: 24px;
+        margin-left: 3px;
+        margin-right: 3px;
+        /* margin-top: 4px; */
+        
+        
+      
+    }
+    #check{
+        margin-top: 11px;
+        margin-right: 4px;
+    }
+   #h1{
+       font-family:'Times New Roman', Times, serif;
+       margin-left: 74px;
+       margin-top: 50px;
+       font-size: 30px;
+       margin-bottom: 40px;
+       width: 85%;
+   }
+   #box3{
+       border: 0;
+       border-left: 1px dashed teal;
+       width: 20%;
+       height: 180px;
+       margin-top: 60px;
+       margin-left: 90px;
+   }
+   #log{
+       color: rgb(34, 88, 238);
+        border: 1px solid rgb(22, 146, 247);
+        width: 95px;
+        height:32px;
+        border-radius: 23px;
+       padding-left:  20px;
+       opacity: 0.7;
+       margin-left: 11px;
+       padding-top: 3px;
+       font-size: 16px;
+       font-weight: bold;
+    }
+    #google{
+        padding-top: 7px;
+        padding-left: 5px;
+    }
+    #p3{
+        width: 90px;
+        margin-top: 40px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgb(22, 146, 247);
+        padding-left: 4px;
+        font-weight: bold;
+        font-size: 14px;
+        opacity: 0.6;
+    
+    }
+    .paracheck{
+        margin-left: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 14px;
+        font-family: sans-serif;
+        opacity: 0.6;
+    }
+    .div12{
+        display: flex;
+        width: 72%;
+        /* text-align: center; */
+        /* margin: auto; */
+        margin-left: 30px;
+        /* border: 1px solid red; */
+        margin-top: 5px;
+    }
+    #checkb{
+        margin-top: 12px;
+        color: rgb(4, 133, 115);
+        /* background-color: teal; */
+        padding-left: 13px;
+    }
+    #img{
+        /* margin-bottom: 150px; */
+        position: sticky;
+        z-index: 0.4;
+        overflow-y: visible; 
+        /* width: 210px;
+        height: 200px; */
+        margin-top: -55px;
+        margin-left: 90px;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        
+    }
+    
+    #h2{
+        width: 85%;
+        /* margin: auto; */
+        font-family:sans-serif;
+       margin-left: 30px;
+       margin-top: 10px;
+       font-size: 20px;
+       text-align: center;
+    }
+    #upload{
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 50px 270px 120px;
+        grid-gap: 10px;
+        width: 88%;
+        margin: auto;
+        height: 100px;
+        /* display: block; */
+        border-radius: 4px;
+        /* box-sizing: border-box; */
+        /* padding-left: 20px; */
+        margin-left: 74px;
+        border: 0;
+        /* border: 1.5px solid rgb(222, 225, 235); */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    #doc1{
+        /* width: 50px; */
+        /* border: 1px solid red; */
+        margin-top: 25px;
+        margin-left: 6px;
+    }
+    #doc2{
+        /* width: 300px; */
+        /* border: 1px solid green; */
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+    #doc3{
+      /* width:50px ;   */
+      /* border: 1px solid teal; */
+      margin-top: 25px;
+    }
+    #ad{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-family: sans-serif;
+    }
+    #ad2{
+        font-size: 16px;
+        /* opacity: 0.7; */
+        color: rgb(98, 121, 121);
+        width: 220px;
+    }
+    .custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Upload Resume';
+  display: inline-block;
+  background: linear-gradient(top, orangered);
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-radius: 23px;
+    padding-left: 15px;
+    padding-top: 11px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+ 
+  font-weight:bold;
+  font-size: 12px;
+  color: white;
+  width: 100px;
+  height: 24px;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+#navbar{
+    /* overflow: hidden; */
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    margin-top: 0px;
+    padding-top: 6px;
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+#login{
+    text-decoration: none;
+}
+#navp{
+    margin-right:  30px;
+    color: rgb(86, 86, 92);
+    margin-top: 12px;
+}
+#navimg{
+    margin-left: 20px;
+    margin-top: 8px;
+}
+#btnp{
+    margin-left: 80px;
+    font-size: 12px;
+    color: rgb(86, 86, 92);
+    margin-bottom: 11px;
+}
+#button{
+    margin-left: 78px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #457eff;
+    background-color: #457eff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+   border-radius: 23px;
+}
+#check{
+    border: 1px dashed grey;
+    margin-left: 82px;
+}
+/* #checkbox1{
+    border: 1px solid teal;
+    padding-right: 90px;
+}
+#checkbox2{
+    border: 1px solid teal;
+    padding-right: 90px;
+} */
+
+    </style>
 </head>
 <body>
     <header>
