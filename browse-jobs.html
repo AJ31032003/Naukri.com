@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="browse-jobs.css">
+    <title>Jobs by Company, Location, Skills, Designation & Industry - Naukri.com </title>
+
+    <script
+      src="https://kit.fontawesome.com/d5d0d8bb45.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     
+   
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <div id="navbar1">
+        <div class="left1">
+          <img
+            id="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe7IKd6HmXmjs2l0I-mFu8Vps2wALT6IHQaQ&usqp=CAU"
+            alt=""
+            onclick="window.location.href='homepagesNaukri.html'"
+          />
+        </div>
+        <div class="right1">
+          <ul>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">JOBS</a>
+              <div class="dropdown-content1">
+                <a href="#">Job by Location</a>
+                <a href="#">Job by Skill</a>
+                <a href="#">Job by Designation</a>
+                <a href="#">Job by Company</a>
+                <a href="#">Job by Category</a>
+                <a href="#">Browse All Jobs</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">RECRUITERS</a>
+              <div class="dropdown-content1">
+                <a href="#">Browse all Recruiters</a>
+                <a href="#">Connection Recruiters</a>
+                <a href="#">Go to Naukri Recruiter</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">COMPANIES</a>
+              <div class="dropdown-content1">
+                <a href="#">Browse All Companies</a>
+                <a href="#">About Companies</a>
+                <a href="#">Interview Questions</a>
+                <a href="#">Write Company Review</a>
+                <a href="#">Write Interview Advice</a>
+                <a href="#">Company Review</a>
+                <a href="#">Company Salaries</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">TOOLS</a>
+              <div class="dropdown-content1">
+                <a href="#">Carier Dashboard</a>
+                <a href="#">Your Next Career Move</a>
+                <a href="#">Skill Trend</a>
+                <a href="#">Naukri Lab</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">SERVICES</a>
+              <div class="dropdown-content1">
+                <a href="#">Design</a>
+                <a href="#">Web</a>
+                <a href="#">Mobile</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">MORE</a>
+              <div class="dropdown-content1">
+                <a href="#">Our Company</a>
+                <a href="#">Team</a>
+                <a href="#">Support</a>
+              </div>
+            </li>
+            <li><a class="dropbtn1" href="#">LOGIN </a></li>
+            
+            <li>
+              <a href=""
+                ><i
+                  style="
+                    width: 30px;
+                    padding: 0px -5px 0px -5px;
+                    margin: 5px 0px;
+                    color: rgb(82, 82, 82);
+                  "
+                  class="far fa-bell fa-2x"
+                  ><span class="badge">3</span></i
+                ></a
+              >
+            </li>
+
+            <li class="dropdown1">
+              <a class="dropbtn1" href="#">For Employers</a>
+              <div class="dropdown-content1">
+                <a href="#">Buy Online</a>
+                <a href="#">Employe Login</a>
+                <a href="#">Support</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="inner1">
+          <p onclick="window.location.href='homepagesNaukri.html'">All Jobs</p>
+          <p onclick="window.location.href='homepagesNaukri.html'">
+            IIT/IIM Jobs
+          </p>
+          <p onclick="window.location.href='homepagesNaukri.html'">Govt Jobs</p>
+          <p onclick="window.location.href='homepagesNaukri.html'">
+            International Jobs
+          </p>
+          <p onclick="window.location.href='homepagesNaukri.html'">
+            Wlak-In jobs
+          </p>
+        </div>
+        <div id="sbox">
+          <div class="sbx">
+            <form class="searchbox" action="">
+              <input
+                type="text"
+                class="leftbar"
+                placeholder=" Skills, Designation, Company"
+                id="SDCInput"
+              />
+              <input
+                type="text"
+                class="rightbar"
+                placeholder=" Locations/Locality"
+                id="locationInput"
+              />
+              <button class="searchbar" id="search-btn">Search</button>
+            </form>
+            <h6 class="adv">Advanced Search</h6>
+            <h6 class="browse">Browse Jobs</h6>
+            <div id="ibox">
+              <div>All Jobs</div>
+              <div>Jobs Company</div>
+              <div>Jobs by Category</div>
+              <div>Jobs by Location</div>
+              <div>Jobs by Designation</div>
+              <div>Jobs by Skill</div>
+            </div>
+          </div>
+          <div id="reg">
+            <button onclick='window.location.href="signup.html"'>
+              Register With Us
+            </button>
+            <h5>-or-</h5>
+            <h3>Upload Your CV</h3>
+            <h6>Max 2MB, doc, docx, rtf, pdf</h6>
+            <h5>We Will Create Your Profile</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="box2">
+        <h3>Browse Jobs by Locations</h3>
+        <div id="innerbox2">
+          <div onclick='setLocationFilter("Mumbai")''>
+          <img src="https://i.ibb.co/VWR7bT7/mumbai-png.png" alt="" />
+          <h5>Jobs in Mumbai</h5>
+        </div>
+
+        <div onclick='setLocationFilter("Delhi")'>
+          <img src="https://i.ibb.co/4KYsnjL/delhi-png.png" alt="" />
+          <div>
+            <h5>Jobs in Delhi</h5>
+          </div>
+        </div>
+        <div onclick='setLocationFilter("Bangalore/Bengaluru")'>
+          <img src="https://i.ibb.co/R4BXyhh/bang-png.png" alt="" />
+          <h5>Jobs in Bangolore</h5>
+          <div></div>
+        </div>
+        <div onclick="setLocationFilter('Hyderabad')">
+          <img src="https://i.ibb.co/bscyw3m/hyd-png.png" alt="" />
+          <h5>Jobs in Hyderabad</h5>
+        </div>
+        <div onclick="setLocationFilter('Chennai')">
+          <img src="https://i.ibb.co/5hq9mCv/chennai-png.png" alt="" />
+          <h5 onclick="window.location.href='jobs.html'">Jobs in Chernnai</h5>
+        </div>
+      </div>
+      <a
+        onclick="window.location.href='jobs.html'"
+        id="a1"
+        href=""
+        style="text-decoration: none"
+        >View All Locations</a
+      >
+    </div>
+
+    
+    <div id="box3">
+      <div>
+        <h3 onclick="window.location.href='jobs.html'" style="margin-top: 10px">
+          Browse Jobs by Functional Areas
+        </h3>
+        <div class="innerbox3">
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">Bank Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Data Entry Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">HR Jobs BPO Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">BPO Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Finance Jobs</h5>
+          </div>
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">Teacher Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Legal Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Marketing Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Defence Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Internet Jobs</h5>
+          </div>
+        </div>
+        <a
+          onclick="window.location.href='jobs.html'"
+          class="a2"
+          href=""
+          style="text-decoration: none"
+          >View All Functional Areas</a
+        >
+      </div>
+      <div>
+        <h3 onclick="window.location.href='jobs.html'" style="margin-top: 10px">
+          Browse Jobs by Industries
+        </h3>
+        <div class="innerbox3">
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">Govt Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Railway Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">NGO Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Pharma Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">IT Jobs</h5>
+          </div>
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">Agriculture Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Telecom Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Shipping Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Oil And Gas Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Aviation Jobs</h5>
+          </div>
+        </div>
+        <a
+          onclick="window.location.href='jobs.html'"
+          class="a2"
+          style="text-decoration: none"
+          href=""
+          >View All Industries</a
+        >
+      </div>
+    </div>
+    <div class="box2">
+      <h3 onclick="window.location.href='jobs.html'">
+        Browse Jobs by Companies
+      </h3>
+      <div id="innerbox2">
+        <div>
+          <img
+            onclick="window.location.href='jobs.html'"
+            style="
+              width: 65%;
+              height: 25%;
+              margin: 60px 0px 20px 0px;
+              border: 1px solid gray;
+            "
+            src="https://www.tcs.com/content/dam/tcs/images/discover-tcs/brand/png/tcs-black-and-white-reversible.png"
+            alt=""
+          />
+          <div><h5 onclick="window.location.href='jobs.html'">TCS</h5></div>
+        </div>
+
+        <div>
+          <img
+            onclick="window.location.href='jobs.html'"
+            style="
+              width: 65%;
+              height: 25%;
+              margin: 60px 0px 20px 0px;
+              border: 1px solid gray;
+            "
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <div><h5 onclick="window.location.href='jobs.html'">WIPRO</h5></div>
+        </div>
+        <div>
+          <img
+            onclick="window.location.href='jobs.html'"
+            style="
+              width: 65%;
+              height: 25%;
+              margin: 60px 0px 20px 0px;
+              border: 1px solid gray;
+            "
+            src="data:image/jpeg;base64,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b9x2H6yMxOB8yitaqdayK60GyotShVH1l8iWV0lpEPHLeyjW8E5do5b9bzHQ9CqgLuPrJPh/gvC08h6kL3D++sbmYe/KOy/ISzRDumtbCiU9lZ4v4Rr1Va+ax6rKubkdQGGzbbhlPftI/TOGdUxa1or1ZPKUcqA4isyr7Aky7RIVtLQcS3soWt+HhzeR7M+9rV35rbEViQeyqo2CKPYD5y4aZgLjUVY6fs1IqA7d9h32/HrPbEOm1pkqJT2il6JwMMbOfULMk3WM1jhTWFCu2/Xfc9gSJc5zEh03yJlTwUvU+BhlagufdkllV62FHljblTbZebf36yxa5gNlY1uMlnlG1eQuF3Kqe+w39ukkoh03rfgKUt/qVng7hVNKrsQWG1rXDM5QL0AAC7fX6zxcV8B06jauQtpx7ezsqBhZt2JG4+8PeXOJPXXV1eSOienp8EdouHdj0rVff9oZByiwpyMVHbm6nc/GSMRKlxERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA//9k="
+            alt=""
+          />
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">ICICI Bank</h5>
+          </div>
+        </div>
+        <div>
+          <img
+            onclick="window.location.href='jobs.html'"
+            style="
+              width: 65%;
+              height: 25%;
+              margin: 60px 0px 20px 0px;
+              border: 1px solid gray;
+            "
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGYQ8AfwZ5Bz6Z6mN-O4e8Tlc6TXXFstu2g&usqp=CAU"
+            alt=""
+          />
+          <div><h5 onclick="window.location.href='jobs.html'">IBM</h5></div>
+        </div>
+        <div>
+          <img
+            onclick="window.location.href='jobs.html'"
+            style="
+              width: 65%;
+              height: 25%;
+              margin: 60px 0px 20px 0px;
+              border: 1px solid gray;
+            "
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <div><h5 onclick="window.location.href='jobs.html'">Intel</h5></div>
+        </div>
+      </div>
+      <a
+        onclick="window.location.href='jobs.html'"
+        id="a1"
+        href=""
+        style="text-decoration: none"
+        >View All Companies</a
+      >
+    </div>
+    <div id="box3">
+      <div>
+        <h3 onclick="window.location.href='jobs.html'" style="margin-top: 10px">
+          Browse Jobs by Designations
+        </h3>
+        <div class="innerbox3">
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">
+              Company Secretary Jobs
+            </h5>
+            <h5 onclick="window.location.href='jobs.html'">
+              Business Analyst Jobs
+            </h5>
+            <h5 onclick="window.location.href='jobs.html'">Lecturer Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Air Hostess Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Clerk Jobs</h5>
+          </div>
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">Oracle DBA Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">
+              Computer Operator Jobs
+            </h5>
+            <h5 onclick="window.location.href='jobs.html'">Libarian Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">
+              Management Trainee Jobs
+            </h5>
+            <h5 onclick="window.location.href='jobs.html'">Pharmacist Jobs</h5>
+          </div>
+        </div>
+        <a
+          onclick="window.location.href='jobs.html'"
+          class="a2"
+          href=""
+          style="text-decoration: none"
+          >View All Designations</a
+        >
+      </div>
+      <div>
+        <h3 onclick="window.location.href='jobs.html'" style="margin-top: 10px">
+          Browse Jobs by Skills
+        </h3>
+        <div class="innerbox3">
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">
+              BIotachnology Jobs
+            </h5>
+            <h5 onclick="window.location.href='jobs.html'" Software>
+              Testing Jobs
+            </h5>
+            <h5 onclick="window.location.href='jobs.html'">Nursing Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Networking Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Mainframe Jobs</h5>
+          </div>
+          <div>
+            <h5 onclick="window.location.href='jobs.html'">SAP Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Animation Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Net Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Accounting Jobs</h5>
+            <h5 onclick="window.location.href='jobs.html'">Oracle Jobs</h5>
+          </div>
+        </div>
+        <a
+          onclick="window.location.href='jobs.html'"
+          class="a2"
+          style="margin-left: 365px; text-decoration: none"
+          href=""
+          >View All Skills</a
+        >
+      </div>
+    </div>
+    </body>
+</html>
