@@ -454,3 +454,36 @@
     
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/206e20ada5.js" crossorigin="anonymous"></script>
+<script>
+    document.querySelector("form").addEventListener("submit", myFunction);
+    var mydata= JSON.parse(localStorage.getItem("naukariDataBase")) || [];
+
+
+    function myFunction(event){
+        event.preventDefault();
+        var file1= document.querySelector("#file").value;
+       var username = document.querySelector("#name").value;
+        var email= document.querySelector("#email").value;
+        var mobile= document.querySelector("#mbl").value;
+        var pass= document.querySelector("#pass").value;
+        var exp= document.querySelector("#checkbox").value;
+        var wp= document.querySelector("#check").value;
+
+        var object={
+            sfile: file1,
+            username:name,
+            email:email,
+            mblnu:mobile,
+            password:pass,
+            experience: exp,
+            whatsapp:wp
+        };
+        mydata.push(object);
+        localStorage.setItem("naukariDataBase", JSON.stringify(mydata));
+        alert("signup successfully");
+        window.location.href="login.html";
+
+    }
+</script>
