@@ -66,6 +66,186 @@
       }
 
       /* day-3 */
+
+      #box2 {
+        width: 45%;
+        /* border: 1px solid greenyellow; */
+        height: 570px;
+        margin-top: -40px;
+
+        background-color: white;
+        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .div12 {
+        display: flex;
+        margin-left: 50px;
+        /* border: 1px solid red; */
+        margin-right: 30px;
+        /* background-color: white; */
+      }
+      .paracheck {
+        margin-left: 15px;
+        margin-bottom: 0px;
+      }
+      #checkb {
+        margin-top: 15px;
+        margin-left: 20px;
+        color: #4a90e2;
+        font-weight: bold;
+      }
+
+      #navbar {
+        /* overflow: hidden; */
+        /* position: fixed; */
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        padding-top: 6px;
+
+        background-color: white;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        justify-content: space-evenly;
+        margin-bottom: 120px;
+      }
+      #login {
+        text-decoration: none;
+      }
+      #navitem {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .navp {
+        margin-right: 30px;
+        color: rgb(86, 86, 92);
+        margin-top: 12px;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+      #navimg {
+        margin-left: 20px;
+        margin-top: 8px;
+      }
+
+      /* day-3 */
+
+      #h1 {
+        margin-left: 57px;
+        font-size: 23px;
+      }
+      #btn {
+        width: 200px;
+        height: 30px;
+        border: 1px solid #4a90e2;
+        color: #4a90e2;
+        padding-left: 60px;
+        margin-top: 30px;
+        padding-top: 10px;
+        border-radius: 6px;
+        margin-left: 60px;
+      }
+      #loginp {
+        margin-left: 60px;
+      }
+      input[type="email"] {
+        font-size: 20px;
+        width: 70%;
+        height: 35px;
+        border: 1px solid grey;
+        margin-left: 55px;
+        /* background-color: white; */
+      }
+      input[type="password"] {
+        font-size: 20px;
+        width: 70%;
+        height: 35px;
+        border: 1px solid grey;
+        margin-left: 55px;
+      }
+      .content {
+        /* text-align: left; */
+        display: block;
+        width: 80%;
+        margin-left: 55px;
+        color: black;
+        /* margin: auto; */
+        margin-top: 40px;
+        margin-bottom: 5px;
+        font-family: sans-serif;
+        /* color: rgb(68, 124, 124); */
+        /* color: rgb(86, 86, 92); */
+        /* font-weight: bold; */
+        font-size: 12px;
+      }
+      #forgot {
+        font-size: 12px;
+        margin-top: 0%;
+        margin-left: 270px;
+      }
+      #loginbtn {
+        font-size: 16px;
+        color: white;
+        width: 70%;
+        height: 35px;
+        border: 1px solid #4a90e2;
+        margin-left: 55px;
+        background-color: #4a90e2;
+      }
+      #otp {
+        color: #4a90e2;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 150px;
+      }
+      #hr {
+        /* width: 100px; */
+        display: flex;
+        height: 1px;
+      }
+      #hr1 {
+        margin-left: 58px;
+        margin-top: 25px;
+      }
+      #hr2 {
+        margin-right: 90px;
+        margin-top: 25px;
+      }
+      #or {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #gsignin {
+        display: flex;
+        /* border: 1px solid gray; */
+        /* border-left: 1px solid gray; */
+        /* border-right: 1px solid gray; */
+        margin-top: 60px;
+        justify-content: space-between;
+        width: 70%;
+        height: 40px;
+        margin-left: 58px;
+        border-radius: 23px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      #googleimg {
+        width: 17px;
+        height: 17px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      #signgoogle {
+        /* margin-bottom: 10px; */
+        margin-top: 10px;
+        color: gray;
+        margin-right: 98px;
+      }
+
+      /* day-4 */
     </style>
   </head>
   <body>
@@ -133,8 +313,53 @@
           alt=""
         />
       </div>
+
+      <!-- day-3 -->
+      <div id="box2">
+        <h2 id="loginp">Login</h2>
+        <form>
+          <p class="content">Email ID / Username</p>
+          <input type="email" id="email2" placeholder="Enter Email Id" />
+          <!-- <input  class="input" type="email" name="" id="email" placeholder="Tell us your Email ID "> -->
+          <p class="content">Password</p>
+          <input type="password" id="pass2" placeholder="Enter Password" />
+          <!-- <input type="checkbox" onclick="myFunction()">Show Password -->
+          <p id="forgot" onclick="window.location.href='signup.html'">
+            forgot Password?
+          </p>
+          <input type="submit" value="Log In" id="loginbtn" />
+          <div onclick="window.location.href='signup.html'" id="otp">
+            Use OTP to Login
+          </div>
+          <div id="hr">
+            <hr
+              id="hr1"
+              color="grey"
+              style="display: inline-block"
+              width="150px"
+            />
+            <p id="or">or</p>
+            <hr
+              id="hr2"
+              color="grey"
+              style="display: inline-block"
+              width="160px"
+            />
+          </div>
+          <div id="gsignin">
+            <img
+              id="googleimg"
+              src="https://static.naukri.com/s/5/105/i/ic-google.png"
+              alt=""
+            />
+            <p id="signgoogle">Sign in with Google</p>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <!-- day-3 -->
+    
+
+    <!-- day-4 -->
   </body>
 </html>
