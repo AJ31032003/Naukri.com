@@ -363,3 +363,31 @@
     <!-- day-4 -->
   </body>
 </html>
+
+<script>
+
+document.querySelector("form").addEventListener("submit", login);
+    var users = JSON.parse(localStorage.getItem("naukariDataBase"));
+    
+
+    function login(event){
+        event.preventDefault();
+        var email= document.querySelector("#email2").value;
+        var pass= document.querySelector("#pass2").value;
+
+        for(var i=0; i<users.length; i++){
+            // console.log(regdUsers[i].email);
+            if((users[i].email==email) && (users[i].password ==pass))
+            {
+                alert("successfully loged in");
+               window.location.href="homepagesNaukri.html";
+               break;
+            }else
+            {
+                alert("try again")
+                break;
+            }
+        }
+
+    }
+</script>
