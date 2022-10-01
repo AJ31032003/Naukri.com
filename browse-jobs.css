@@ -491,3 +491,25 @@ li.dropdown1 {
 #reg > button:hover {
   background-color: rgb(202, 89, 23);
 }
+
+  
+
+.social {
+  background: url("https://static.naukri.com/s/4/100/i/socialSharing.png");
+  height: 28px;
+  width: 28px;
+  margin: 2px;
+}
+
+#fb-icon {
+  background-position: 0px 0px;
+}
+#twitter-icon {
+  background-position: 0px -84px;
+}
+#linkedin-icon {
+  background-position: 0px -56px;
+}
+body{
+  margin:0px;
+}
