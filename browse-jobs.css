@@ -513,3 +513,12 @@ li.dropdown1 {
 body{
   margin:0px;
 }
+
+
+.fa-bell:before{
+  font-size: 18px;
+}
+
+.badge{
+  font-size: 18px;
+}
