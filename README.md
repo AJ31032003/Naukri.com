@@ -6,9 +6,9 @@
 <h3 >Naukri.com is an Indian employment website operating in India and Middle East. It was founded in March 1997 by Indian businessman Sanjeev Bikhchandani.[1] Naukri.com is the largest employment website in India</h3>
 
 
-**Original website link** :  https://www.naukri.com/
+**Original website link** :  [Naukri.com](https://www.naukri.com/)
  <br/>
- Link of My deployed project :  https://wondrous-gaufre-17f2d4.netlify.app/
+ Link of My deployed project :  [click here](https://naukri123.netlify.app/) 
  <br/>
  
  
