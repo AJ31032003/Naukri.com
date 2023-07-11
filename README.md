@@ -1,5 +1,5 @@
 <h1> "Naukri.com" (Collaborative) </h1>
-<img src="[https://static.naukimg.com/s/4/100/i/naukri_Logo.png](https://i.pinimg.com/originals/df/2d/cc/df2dcc1fb1e7e2dc9b71d7c17ccb2ccd.jpg)" width="200" height="200">
+<img src="https://i.pinimg.com/originals/df/2d/cc/df2dcc1fb1e7e2dc9b71d7c17ccb2ccd.jpg" width="300" height="200">
 
 <h2 style="color:Tomato;">About</h2>
 
